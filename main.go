@@ -84,7 +84,7 @@ func main() {
 		Manufacturer: "TP-Link",
 		Model:        info.System.Sysinfo.Model,
 	})
-	config := hc.Config{Pin: *pinArg, IP: "10.0.12.241"}
+	config := hc.Config{Pin: *pinArg}
 	t, err := hc.NewIPTransport(config, acc.Accessory)
 	if err != nil {
 		log.Panic(err)
